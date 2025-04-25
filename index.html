@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Weather Dashboard</h1>
+        
+        <!-- Search Section -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+                    <button class="btn btn-primary" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unit Toggle -->
+        <div class="text-center mb-4">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary active" id="celsiusBtn">Celsius</button>
+                <button type="button" class="btn btn-outline-primary" id="fahrenheitBtn">Fahrenheit</button>
+            </div>
+        </div>
+
+        <!-- Current Weather Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <div class="card" id="currentWeather">
+                    <div class="card-body text-center">
+                        <h2 class="city-name mb-3">Enter a city name</h2>
+                        <div class="weather-icon mb-3"></div>
+                        <h3 class="temperature">--°C</h3>
+                        <p class="description mb-2">Weather Description</p>
+                        <div class="details">
+                            <p class="humidity mb-1">Humidity: --%</p>
+                            <p class="wind mb-1">Wind: -- m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <h3 class="text-center mb-3">5-Day Forecast</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4" id="forecast">
+
+            <!-- Forecast Card Template - Day 1 -->
+            <div class="col forecast-day" style="display: none;">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title forecast-date">Date</h5>
+                        <div class="forecast-icon">
+                            <img src="" alt="weather icon">
+                        </div>
+                        <p class="card-text forecast-temp">--°C</p>
+                        <p class="card-text forecast-desc">Weather Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="col forecast-day" style="display: none;">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title forecast-date">Date</h5>
+                        <div class="forecast-icon">
+                            <img src="" alt="weather icon">
+                        </div>
+                        <p class="card-text forecast-temp">--°C</p>
+                        <p class="card-text forecast-desc">Weather Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="col forecast-day" style="display: none;">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title forecast-date">Date</h5>
+                        <div class="forecast-icon">
+                            <img src="" alt="weather icon">
+                        </div>
+                        <p class="card-text forecast-temp">--°C</p>
+                        <p class="card-text forecast-desc">Weather Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="col forecast-day" style="display: none;">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title forecast-date">Date</h5>
+                        <div class="forecast-icon">
+                            <img src="" alt="weather icon">
+                        </div>
+                        <p class="card-text forecast-temp">--°C</p>
+                        <p class="card-text forecast-desc">Weather Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="col forecast-day" style="display: none;">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title forecast-date">Date</h5>
+                        <div class="forecast-icon">
+                            <img src="" alt="weather icon">
+                        </div>
+                        <p class="card-text forecast-temp">--°C</p>
+                        <p class="card-text forecast-desc">Weather Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Padding for footer -->
+    <div class="content-padding"></div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 Vivian Tu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
